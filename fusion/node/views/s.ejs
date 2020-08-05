@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="/socket.io/socket.io.js"></script>
+
+    </head>
+    <body>
+        <button id="s">click</button>
+        <h1 >hello world</h1>
+        <ul id="t">
+        <% for(var i of data){%>
+            <li><%= i.name %></li>
+       <% } %>
+        </ul>
+    </body>
+    <script src="s.js"> </script>
+</html>

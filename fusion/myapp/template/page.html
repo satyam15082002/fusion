@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <hr>
+    {% for contact in user %} 
+    <h1>{{ contact.name|upper }}</h1>
+    <hr>
+    {% endfor %}
+
+<div>
+    {% if user.has_previous%}
+     <a href="?page={{user.previous_page_number}}"><strong>previous</strong></a>
+    <a href="?page=1"><strong>First</strong></a>
+    {% endif %}
+    {% if user.has_next %}
+   <a href="?page={{user.next_page_number}}"><strong>next</strong></a>
+    <a href="?page={{user.paginator.num_pages}}"><strong>last</strong></a>
+    {% endif %}
+</div>
+    </body>
+</html>

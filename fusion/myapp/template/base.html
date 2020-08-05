@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload=()=>{
+                alert("hello")
+            }
+        </script>
+        <title>{% block title %} home{% endblock %}</title>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <h1>hello</h1>
+        {%block body%}
+        {% endblock %}
+    </body>
+</html>
